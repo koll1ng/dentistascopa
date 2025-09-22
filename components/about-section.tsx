@@ -1,28 +1,4 @@
-import { Card, CardContent } from "@/components/ui/card"
-import { Award, Users, Clock, MapPin } from "lucide-react"
-
-const highlights = [
-  {
-    icon: Award,
-    title: "Equipe Especializada",
-    description: "Profissionais qualificados em tratamentos odontológicos completos",
-  },
-  {
-    icon: Users,
-    title: "Atendimento Completo",
-    description: "Tratamentos odontológicos completos para toda a família",
-  },
-  {
-    icon: Clock,
-    title: "Horário Estendido",
-    description: "Atendimento todos os dias das 08:00 às 20:00 para sua comodidade",
-  },
-  {
-    icon: MapPin,
-    title: "Copacabana - RJ",
-    description: "Localização privilegiada em Copacabana, Rio de Janeiro",
-  },
-]
+// import { Award, Users, Clock, MapPin } from 'lucide-react'
 
 export function AboutSection() {
   return (
@@ -70,20 +46,6 @@ export function AboutSection() {
             />
             <div className="absolute -bottom-4 -left-4 w-full h-full bg-primary/10 rounded-2xl -z-10"></div>
           </div>
-        </div>
-
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
-          {highlights.map((highlight, index) => (
-            <Card key={index} className="text-center border-0 shadow-lg hover:shadow-xl transition-shadow">
-              <CardContent className="p-6">
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <highlight.icon className="w-8 h-8 text-primary" />
-                </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">{highlight.title}</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">{highlight.description}</p>
-              </CardContent>
-            </Card>
-          ))}
         </div>
       </div>
     </section>
